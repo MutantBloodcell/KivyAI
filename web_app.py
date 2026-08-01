@@ -3,7 +3,7 @@ import requests
 import gradio as gr
 
 OLLAMA_URL = "http://localhost:11434/api/chat"
-MODEL_NAME = "qwen2.5:3b"
+MODEL_NAME = "minicpm-v4.6"
 
 def predict(message, history):
     
