@@ -1,4 +1,4 @@
-Hello! Thanks for using my ai named kivyai, they will be your great companion. (also omniscient)
+Hello! Thanks for using my ai named kivyai, they will be your great companion.
 
 1. Install the zip
 
