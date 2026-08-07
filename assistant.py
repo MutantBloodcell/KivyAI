@@ -22,7 +22,7 @@ def ask_kivy(user_text):
     }
     
     try:
-        response = requests.post(OLLAMA_URL, json=payload, timeout=120)
+        response = requests.post(OLLAMA_URL, json=payload, timeout=200)
         if response.status_code == 200:
             ai_response = response.json()['message']['content']
             chat_history.append({"role": "assistant", "content": ai_response})
@@ -33,7 +33,7 @@ def ask_kivy(user_text):
 
 if __name__ == "__main__":
     print("="*50)
-    print("Welcome! Kivy AI is successfully launched.")
+    print("Welcome! KivyAI is successfully launched.")
     print("Type 'exit', 'stop' or 'goodbye' to close the assistant.")
     print("="*50)
     
