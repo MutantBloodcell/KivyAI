@@ -40,7 +40,7 @@ def predict(message, history):
     
     try:
         
-        response = requests.post(OLLAMA_URL, json=payload, timeout=120, stream=True)
+        response = requests.post(OLLAMA_URL, json=payload, timeout=200, stream=True)
         
         if response.status_code == 200:
             partial_text = ""
